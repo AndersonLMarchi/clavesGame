@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/game_teclado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/img_desc"
+        android:src="@drawable/teclas" />
+
+    <ImageView
+        android:id="@+id/img_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/img_clave"
+        android:contentDescription="@string/img_desc"
+        android:src="@drawable/n0" />
+
+    <ImageView
+        android:id="@+id/img_clave"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/img_desc"
+        android:src="@drawable/sol" />
+
+    <RelativeLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/game_teclado"
+        android:layout_alignLeft="@+id/game_teclado"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp" >
+
+        <Button
+            android:id="@+id/bt_do"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="27dp"
+            android:background="#ffffff"
+            android:text="@string/nulo" />
+
+        <Button
+            android:id="@+id/bt_re"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bt_do"
+            android:background="#ffffff"
+            android:text="@string/nulo" />
+
+        <Button
+            android:id="@+id/bt_mi"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/bt_re"
+            android:background="#ffffff"
+            android:text="@string/nulo" />
+
+        <Button
+            android:id="@+id/bt_fa"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/bt_mi"
+            android:background="#ffffff"
+            android:text="@string/nulo" />
+
+        <Button
+            android:id="@+id/bt_sol"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/bt_fa"
+            android:background="#ffffff"
+            android:text="@string/nulo" />
+
+        <Button
+            android:id="@+id/bt_la"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/bt_sol"
+            android:background="#ffffff"
+            android:text="@string/nulo" />
+
+        <Button
+            android:id="@+id/bt_si"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/bt_la"
+            android:background="#ffffff"
+            android:text="@string/nulo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/game_notas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/game_teclado"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/game_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/game_teclado"
+        android:layout_below="@+id/game_notas"
+        android:layout_marginTop="46dp"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/game_pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/game_time"
+        android:layout_alignBottom="@+id/game_time"
+        android:layout_marginLeft="143dp"
+        android:layout_toRightOf="@+id/game_time"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/game_erros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/game_notas"
+        android:layout_alignBottom="@+id/game_notas"
+        android:layout_alignLeft="@+id/game_pontos"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/game_notas"
+        android:layout_alignBottom="@+id/game_notas"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

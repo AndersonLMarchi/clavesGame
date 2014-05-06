@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.game.clavesgame"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="br.com.game.clavesgame.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="br.com.game.clavesgame.GameActivity"
+            android:label="@string/app_name" >            
+        </activity>
+                
+        <activity 
+            android:name="br.com.game.clavesgame.HallActivity"
+            android:label="@string/app_name" >            
+        </activity>
+        
+        <activity 
+            android:name="br.com.game.clavesgame.InitGameActivity"
+            android:label="@string/app_name" >            
+        </activity>        
+                
+        <activity 
+            android:name="br.com.game.clavesgame.InstrActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/InstrTheme">            
+        </activity>
+                
+        <activity 
+            android:name="br.com.game.clavesgame.OptionActivity"
+            android:label="@string/app_name" >            
+        </activity>
+                
+        <activity 
+            android:name="br.com.game.clavesgame.PointsActivity"
+            android:label="@string/app_name" >            
+        </activity>
+    </application>
+
+</manifest>

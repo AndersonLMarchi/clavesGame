@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app_name: nome da aplicação, será usada com título em todas as telas do jogo -->
+    <string name="app_name">Jogo das Claves</string>
+
+    <!-- img_desc: descrição da imagem -->
+    <string name="img_desc">Piano</string>
+
+    <!-- main_title: um título para a tela principal do jogo -->
+    <string name="main_title">Jogo das Claves</string>
+
+    <!-- all_***: nome dos botões que será usada em todas as telas do jogo -->
+    <string name="all_exit">SAIR</string>
+    <string name="all_return">INÍCIO</string>
+    <string name="all_play">JOGAR</string>
+    <string name="all_hall">HALL DA FAMA</string>
+    <string name="all_option">OPÇÕES</string>
+    <string name="all_instr">INSTRUÇÕES</string>
+    <string name="all_finish">TERMINAR</string>
+    <string name="all_replay">JOGAR NOVAMENTE</string>
+
+    <!-- instr_title: um título para a tela de instruções -->
+    <string name="instr_title">Como funciona o Jogo das Claves?</string>
+
+    <!-- instr_title: um título para a tela de instruções -->
+    <string name="hall_title">Hall da Fama</string>
+
+    <!-- init_game_title: um título para a tela inicial antes do jogo -->
+    <string name="init_game_title">Digite seu nome</string>
+
+    <!-- Legendas para a tela de pontuações de pois do jogo terminado -->
+    <string name="points_title">Pontuação do Jogo anterior</string>
+    <string name="points_nome">Nome do Jogador</string>
+    <string name="points_claves">Nº de Claves</string>
+    <string name="points_notas">Notas certas</string>
+    <string name="points_pontos">Pontuação</string>
+    <string name="points_tempo">Tempo</string>
+    <string name="hall_pos">Posição</string>
+
+    <!-- option_***: nomeclatura para os rótulos da tela de opções -->
+    <string name="option_title">Opções de Jogo</string>
+    <string name="option_system">Sistema</string>
+    <string name="option_system_solf">Solfejo</string>
+    <string name="option_system_ingl">Inglês</string>
+    <string name="option_system_notas">Notas</string>
+    <string name="option_time">Tempo</string>
+    <string name="option_time_1">1 Min</string>
+    <string name="option_time_3">3 Min</string>
+    <string name="option_time_5">5 Min</string>
+    <string name="option_sound">Som</string>
+    <string name="option_sound_clave">Acerto</string>
+    <string name="option_sound_error">Erro</string>
+    <string name="option_clave">Clave</string>
+    <string name="option_clave_sol">Sol</string>
+    <string name="option_clave_fa">Fá</string>
+    <string name="option_clave_do3">Dó3</string>
+    <string name="option_clave_do4">Dó4</string>
+
+    <!-- Texto que será mostrado na tela de Instruções do jogo -->
+    <string name="instrucoes">O objetivo deste jogo é auxiliar no aprendizado da música.\n\n
+        Nele você deverá associar a uma clave de partitura à uma nota musical.\n\n
+        Você recebe 10 pontos a cada Acerto e a cada Erro você perde 5 pontos.\n\n
+        No HALL DA FAMA poderá visualizar as 5 melhores pontuações do jogo.\n\n
+        Você pode trocar as opções de Tempo, Som, Sistemas de Notação Musical e as Claves.\n\n\n
+        Divirta-se!!!</string>
+        
+    <string name="noText">noText</string>
+    <string name="nulo"></string>
+
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/points_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/points_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/img_desc"
+        android:src="@drawable/piano" />
+
+    <Button
+        android:id="@+id/points_hall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/points_finish"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="@string/all_hall" />
+
+    <Button
+        android:id="@+id/points_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/all_finish" />
+
+    <Button
+        android:id="@+id/points_play"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/all_replay" />
+
+    <TextView
+        android:id="@+id/points_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/points_title"
+        android:layout_marginTop="35dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="@string/points_nome"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pt_claves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pt_nome"
+        android:layout_alignBottom="@+id/pt_nome"
+        android:layout_alignLeft="@+id/points_claves"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pt_pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pt_notas"
+        android:layout_alignBottom="@+id/pt_notas"
+        android:layout_alignLeft="@+id/points_pontos"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pt_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/points_nome"
+        android:layout_below="@+id/points_nome"
+        android:layout_marginTop="48dp"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/points_claves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pt_nome"
+        android:layout_marginRight="80dp"
+        android:layout_toLeftOf="@+id/points_notas"
+        android:text="@string/points_claves"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/points_notas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pt_nome"
+        android:layout_alignRight="@+id/points_title"
+        android:text="@string/points_notas"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pt_notas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pt_claves"
+        android:layout_alignBottom="@+id/pt_claves"
+        android:layout_toRightOf="@+id/points_claves"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/points_pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pt_nome"
+        android:layout_marginLeft="51dp"
+        android:layout_toRightOf="@+id/points_notas"
+        android:text="@string/points_pontos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/points_tempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/points_pontos"
+        android:layout_alignBottom="@+id/points_pontos"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/points_pontos"
+        android:text="@string/points_tempo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pt_tempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pt_pontos"
+        android:layout_alignBottom="@+id/pt_pontos"
+        android:layout_alignLeft="@+id/points_tempo"
+        android:text="@string/noText"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

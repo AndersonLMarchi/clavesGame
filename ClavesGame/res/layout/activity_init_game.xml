@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/init_game_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/img_desc"
+        android:src="@drawable/piano" />
+
+    <Button
+        android:id="@+id/init_game_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/init_game_play"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="@string/all_return" />
+
+    <Button
+        android:id="@+id/init_game_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/all_play" />
+
+    <AutoCompleteTextView
+        android:id="@+id/init_game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:singleLine="true"
+        android:maxLength="25"
+        android:keepScreenOn="true" 
+        android:ems="10"
+        android:text="@string/nulo" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+    
+</RelativeLayout>

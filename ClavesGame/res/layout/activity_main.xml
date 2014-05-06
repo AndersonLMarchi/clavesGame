@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/main_instr"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/all_instr" />
+
+    <Button
+        android:id="@+id/main_exit"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_alignBaseline="@+id/main_hall"
+        android:layout_alignBottom="@+id/main_hall"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/all_exit" />
+
+    <Button
+        android:id="@+id/main_play"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/main_instr"
+        android:layout_alignRight="@+id/main_exit"
+        android:layout_centerVertical="true"
+        android:text="@string/all_play" />
+
+    <Button
+        android:id="@+id/main_hall"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_alignBaseline="@+id/main_option"
+        android:layout_alignBottom="@+id/main_option"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/main_exit"
+        android:text="@string/all_hall" />
+
+    <Button
+        android:id="@+id/main_option"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_alignBaseline="@+id/main_instr"
+        android:layout_alignBottom="@+id/main_instr"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/main_instr"
+        android:text="@string/all_option" />
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/main_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
